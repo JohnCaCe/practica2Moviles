@@ -1,16 +1,12 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
-/*final List<String> imgList = [
-  "images/spiderman1.png",
-  "images/spiderman2.png",
-  "images/spidermangif.gif"
-];*/
-
 final List<String> imgList = [
-  "images/wanda4.png",
+  "images/w0.png"
+      "images/w1.png",
   "images/wanda2.png",
-  "images/wanda3.png"
+  "images/wanda3.png",
+  "images/wanda4.png"
 ];
 
 class CarouselWithIndicatorDemo extends StatefulWidget {
@@ -24,7 +20,6 @@ class CarouselWithIndicatorDemo extends StatefulWidget {
 
 class _CarouselWithIndicatorState extends State<CarouselWithIndicatorDemo> {
   int _current = 0;
-
   @override
   Widget build(BuildContext context) {
     return Column(children: [
@@ -44,22 +39,6 @@ class _CarouselWithIndicatorState extends State<CarouselWithIndicatorDemo> {
               });
             }),
       ),
-      /* CarouselSlider(
-        items: imgList2
-            .map((item) => Container(
-                  child: Center(child: Image.asset(item.toString())),
-                ))
-            .toList(),
-        options: CarouselOptions(
-            autoPlay: true,
-            enlargeCenterPage: true,
-            aspectRatio: 2.0,
-            onPageChanged: (index, reason) {
-              setState(() {
-                _current = index;
-              });
-            }),
-      ),*/
       Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: imgList.map((url) {
